@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cv_form{
+    margin-bottom: 50px;
+}
+#cv_template{
+    display: none;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.personalInfo{
+    width: 40%;
+    margin: 3%;
+    font-size: 1.5vw;
+    background-color: gainsboro;
+    padding: 1vw;
+}
+.personalInfo input{
+    margin-top: 1vh;
+    width: 25vw;
+    height: 5vh;
+}
+.professionalInfo{
+    width: 40%;
+    margin: 3%;
+    font-size: 1.5vw;
+    background-color: gainsboro;
+    padding: 1vw;
+}
+.professionalInfo textarea{
+    margin-top: 1vh;
+    width: 25vw;
+    height: 9vh;
+}
+.professionalInfo button{
+    background-color: skyblue;
+    height: 5vh;
+    width: 7vw;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+button#submit{
+    background-color: blue;
+    height: 6vh;
+    width: 16vw;
+    position: absolute;
+    left: 40%;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}
+/* Displaying */
+.cv_template{
+    display: flex;
+    flex-direction: row;
+}
+.perInfo{
+    margin: 10px;
+    padding: 10px;
+    height: 85vh;
+    width: 40vw;
+    background-color: #C0C0C0;
+}
+.perInfo div{
+    margin-top: 10px;
+}
+.perInfo img{
+    height: 18vh;
+    width: 18vw;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.proInfo div p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.proInfo{
+    margin: 10px;
+    padding: 10px;
+    height: 85vh;
+    width: 75vw;
+    background-color: #C0C0C0;
+}
+.proInfo div{
+    margin-top: 10px;
+}
+.proInfo div p,li{
+    margin-top: 5px;
+    font-size: 20px;
+}
+button#print{
+    background-color: blue;
+    height: 6vh;
+    width: 16vw;
+    position: absolute;
+    left: 40%;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}

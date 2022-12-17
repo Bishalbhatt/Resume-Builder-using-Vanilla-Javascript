@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Resume Builder by Bishal</h1>
+    </header>
+    <div id="cv_form">
+        <div class="container">
+            <div class="personalInfo">
+                <h2>Personal Information</h2><br>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="fname">Father's Name</label><br>
+                <input type="text" name="fname" id="fname"><br>
+                <label for="mname">Mother's Name</label><br>
+                <input type="text" name="mname" id="mname"><br>
+                <label for="photo">Upload Photo</label><br>
+                <input type="file" name="photo" id="photo"><br>
+                <label for="mnumber">Mobile Number</label><br>
+                <input type="number" name="mnumber" id="mnumber"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="linkdinProfile">LinkDin Profile Link</label><br>
+                <input type="text" name="linkdinProfile" id="linkdinProfile">
+            </div>
+            <div class="professionalInfo">
+                <h2>Professional Information</h2>
+                <label for="objective">Objective</label><br>
+                <textarea name="objective" id="objective" placeholder="Type here"></textarea><br>
+                <div id="eQ">
+                    <label for="equalification">Educational Qualification</label><br>
+                    <textarea name="equalification" id="equalification" class="equalification" placeholder="Type here"></textarea><br>
+                    <button type="button" name="equalification" id="addeq" onclick="addEq()">Add</button><br>
+                </div>
+                <div id="wEx">
+                    <label for="wExperience">Work Experience</label><br>
+                    <textarea name="wExperience" id="wExperience" class="wExperience" placeholder="Type here"></textarea><br>
+                    <button type="button" name="wExperience" id="addwe" onclick="addWe()">Add</button><br>
+                </div>
+                <div id="Tsk">
+                    <label for="Tskills">Technical Skills</label><br>
+                    <textarea name="Tskills" id="Tskills" class="Tskills" placeholder="Type here"></textarea><br>
+                    <button type="button" name="Tskills" id="addTski" onclick="AddTs()">Add</button><br>
+                </div>
+                <div id="Ssk">
+                    <label for="Sskills">Soft Skills</label><br>
+                    <textarea name="Sskills" id="Sskills" class="Sskills" placeholder="Type here"></textarea><br>
+                    <button type="button" name="Sskills" id="addSski" onclick="AddSs()">Add</button>
+                </div>
+            </div>
+        </div>
+        <button type="submit" name="submit" id="submit" onclick="makeCV()">Generate CV</button>
+    </div>
+    <!-- CV Template-->
+    <div id="cv_template">
+        <div class="perInfo">
+            <div id="dname">
+                <h3>Name Singh</h3>
+            </div>
+            <div>
+                <img  id="dphoto" src="Photos/man.png">
+            </div>
+            <div>
+                <h3>Father's Name</h3>
+                <p id="dfname">Father Name</p>
+            </div>
+            <div>
+                <h3>Mother's Name</h3>
+                <p id="dmname">Mother Name</p>
+            </div>
+            <div>
+                <h3>Mobile Number</h3>
+                <p id="dmnumber">+91 7891919191</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p id="demail">abc11@gmail.com</p>
+            </div>
+            <div>
+                <h3>LinkDin Profile</h3>
+                <a href="#" id="dlprofile">champ49</a>
+            </div>
+        </div>
+        <div class="proInfo">
+            <div>
+                <h3>Objective</h3>
+                <p id="dobjective">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias eveniet officia possimus 
+                consequatur qui non eius praesentium laudantium sequi delectus, saepe velit.</p>
+            </div>
+            <div>
+                <h3>Educational Qualification</h3>
+                <p id="dQuali">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil sint quo
+                     saepe unde molestiae suscipit cupiditate sequi veniam quisquam fuga cum, a provident!
+                </p>
+            </div>
+            <div>
+                <h3>Work Experience</h3>
+                <p id="dwExpe">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quaerat minima blanditiis eius. 
+                    Vitae pariatur aut nesciunt quas quibusdam sunt amet accusantium dolore?
+                </p>
+            </div>
+            <div>
+                <h3>Technical Skills</h3>
+                <p id="dTSkill">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quo reiciendis explicabo ea 
+                    molestiae magnam harum est? Recusandae aliquam harum reiciendis. In, iusto?
+                </p>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <p id="dSskill">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quo reiciendis explicabo ea 
+                    molestiae magnam harum est? Recusandae aliquam harum reiciendis. In, iusto? 
+                </p>
+            </div><br>
+            <button type="submit" id="print" name="print" onclick="printCV()">Print CV</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
